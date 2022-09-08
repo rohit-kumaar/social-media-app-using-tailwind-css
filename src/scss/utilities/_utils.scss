@@ -1,0 +1,26 @@
+/* ------------------- */
+/* Colors Start        */
+/* ------------------- */
+$colors: (
+  "white": $color-white,
+  "black": $color-black,
+  "green": $color-green,
+  "lightgreen": $color-lightgreen,
+  "slate": $color-slate,
+);
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+/* ----------------- */
+/* Colors End        */
+/* ----------------- */

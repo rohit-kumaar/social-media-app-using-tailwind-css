@@ -1,0 +1,22 @@
+.sidebar {
+  grid-area: sidebar;
+  border-right: 1px solid $color-black;
+
+  &__items {
+    padding-inline: 32px;
+    margin-top: 86px;
+  }
+
+  &__list {
+    font-size: 20px;
+    padding-block: 5px;
+
+    & > * {
+      color: #000;
+    }
+  }
+}
+
+.active {
+  color: $color-green;
+}

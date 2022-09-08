@@ -1,0 +1,16 @@
+.home {
+  display: grid;
+  grid-template: "sidebar section" auto/ 0.3fr 1fr;
+  gap: 16px;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.myProfile {
+  grid-area: section;
+  border: 1px solid green;
+}
+
+.a {
+  grid-area: section;
+}

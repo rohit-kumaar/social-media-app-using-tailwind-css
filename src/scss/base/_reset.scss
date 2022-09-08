@@ -41,14 +41,9 @@ a {
   text-decoration: none;
 }
 
-ol,
-ul {
+li {
+  list-style: none;
   cursor: pointer;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 input,
