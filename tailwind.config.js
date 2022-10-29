@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "login": "url('/src/assets/login.jpg')",
+        login: " url('/src/assets/login.jpg')",
+        "hero-pattern":
+          "linear-gradient(rgba(126, 34, 206, 0.6),rgba(126, 34, 206, 0.6)), url('/src/assets/login.jpg')",
       },
-      
     },
   },
   plugins: [],
