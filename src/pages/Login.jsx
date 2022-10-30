@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { ROUTE_PATH } from "routes/routes";
 
 function Login() {
   return (
     <div className="flex h-screen items-center justify-center bg-purple-400 ">
       {/* card  */}
-      <div className="flex min-h-[600px] w-3/4 rounded-[10px] bg-white">
+      <div className="flex min-h-[600px] w-3/4 rounded-[10px] bg-white ">
         {/* left  */}
-        <div className="flex flex-1  flex-col gap-6 rounded-tl-[10px]   rounded-bl-[10px] bg-hero-pattern bg-top  bg-no-repeat p-12 text-white">
+        <div className="flex flex-1  flex-col gap-6 rounded-tl-[10px]   rounded-bl-[10px] bg-login bg-top  bg-no-repeat p-12 text-white">
           <h1 className="text-8xl  leading-[100px]">Hello World.</h1>
           <p className="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -16,9 +18,11 @@ function Login() {
           </p>
 
           <span className="text-sm">Don't you have an account?</span>
-          <button className="w-1/2 border-none bg-white p-3 font-bold text-purple-600 hover:bg-purple-600 hover:text-white">
-            Register
-          </button>
+          <Link to={ROUTE_PATH.Register}>
+            <button className="w-1/2 border-none bg-white p-3 font-bold text-purple-600 hover:bg-purple-600 hover:text-white">
+              Register
+            </button>
+          </Link>
         </div>
         {/* right  */}
         <div className="flex flex-1 flex-col gap-12 p-12">
@@ -30,7 +34,7 @@ function Login() {
               className="border-b-2 py-5 px-2 focus:z-10 focus:border-purple-600 focus:outline-none focus:ring-purple-600"
             />
             <input
-              type="text"
+              type="password"
               placeholder="Password"
               className="border-b-2 py-5 px-2 focus:z-10 focus:border-purple-600 focus:outline-none focus:ring-purple-600"
             />
