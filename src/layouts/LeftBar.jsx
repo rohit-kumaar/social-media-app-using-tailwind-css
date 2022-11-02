@@ -16,12 +16,12 @@ import Fund from "assets/13.png";
 
 function LeftBar() {
   return (
-    // leftbar
-    <div>
+    // leftBar
+    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[2_2_0%]">
       {/* container  */}
       <div className=" p-5">
         {/* menu  */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
           {/* user  */}
           <div className="flex items-center  gap-2">
             <img
@@ -31,7 +31,7 @@ function LeftBar() {
               alt="Rohit Kumar"
               title="Rohit Kumar"
             />
-            <span>Rohit Kumar</span>
+            <span className="text-sm">Rohit Kumar</span>
           </div>
 
           <div className="flex items-center  gap-2">
@@ -42,7 +42,7 @@ function LeftBar() {
               alt="Friends"
               title="Friends"
             />
-            <span>Friends</span>
+            <span className="text-sm">Friends</span>
           </div>
 
           <div className="flex items-center  gap-2">
@@ -53,7 +53,7 @@ function LeftBar() {
               alt="Groups"
               title="Groups"
             />
-            <span>Groups</span>
+            <span className="text-sm">Groups</span>
           </div>
 
           <div className="flex items-center  gap-2">
@@ -64,7 +64,7 @@ function LeftBar() {
               alt="Market"
               title="Market"
             />
-            <span>Marketplace</span>
+            <span className="text-sm">Marketplace</span>
           </div>
 
           <div className="flex items-center  gap-2">
@@ -75,7 +75,7 @@ function LeftBar() {
               alt="Watch"
               title="Watch"
             />
-            <span>Watch</span>
+            <span className="text-sm">Watch</span>
           </div>
 
           <div className="flex items-center  gap-2">
@@ -86,7 +86,106 @@ function LeftBar() {
               alt="Memories"
               title="Memories"
             />
-            <span>Memories</span>
+            <span className="text-sm">Memories</span>
+          </div>
+        </div>
+
+        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200" />
+        {/* menu  */}
+        <div className="flex flex-col gap-2">
+          <span className="text-xs">Your shortcuts</span>
+          {/* user  */}
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Events}
+              alt="Events"
+              title="Events"
+            />
+            <span className="text-sm">Events</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Gaming}
+              alt="Gaming"
+              title="Gaming"
+            />
+            <span className="text-sm">Gaming</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Gallery}
+              alt="Gallery"
+              title="Gallery"
+            />
+            <span className="text-sm">Gallery</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Videos}
+              alt="Videos"
+              title="Videos"
+            />
+            <span className="text-sm">Videos</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Messages}
+              alt="Messages"
+              title="Messages"
+            />
+            <span className="text-sm">Messages</span>
+          </div>
+        </div>
+        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200" />
+        {/* menu  */}
+        <div className="flex flex-col gap-2">
+          <span className="text-xs">Others</span>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Fund}
+              alt="Fund"
+              title="Fund"
+            />
+            <span className="text-sm">Fundraiser</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Tutorials}
+              alt="Tutorials"
+              title="Tutorials"
+            />
+            <span className="text-sm">Tutorials</span>
+          </div>
+
+          <div className="flex items-center  gap-2">
+            <img
+              className="h-7 w-7"
+              loading="lazy"
+              src={Courses}
+              alt="Courses"
+              title="Courses"
+            />
+            <span className="text-sm">Courses</span>
           </div>
         </div>
       </div>

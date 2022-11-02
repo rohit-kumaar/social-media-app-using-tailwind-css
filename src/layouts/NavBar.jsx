@@ -14,7 +14,7 @@ import rohit from "assets/rohit.jpeg";
 function NavBar() {
   return (
     // navbar
-    <div className="flex h-[50px] justify-between border-b-2 py-[10px] px-5">
+    <div className="sticky top-0 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5">
       {/* left  */}
       <div className="flex items-center gap-3">
         <Link to={ROUTE_PATH.Home}>

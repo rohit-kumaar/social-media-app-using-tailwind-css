@@ -10,7 +10,9 @@ function Layout() {
       <NavBar />
       <div className="flex">
         <LeftBar />
-        <Outlet />
+        <div className="flex-[6_6_0%]">
+          <Outlet />
+        </div>
         <RightBar />
       </div>
     </>
