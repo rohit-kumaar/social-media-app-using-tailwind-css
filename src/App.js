@@ -10,7 +10,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import { ProtectedRoute } from "routes/protectedRoutes";
-import { ROUTE_PATH } from "routes/routes";
+import { ROUTE_PATH } from "routes/routePath";
 
 function App() {
   const router = createBrowserRouter([

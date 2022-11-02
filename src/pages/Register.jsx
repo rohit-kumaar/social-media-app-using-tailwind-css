@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ROUTE_PATH } from "routes/routes";
+import { ROUTE_PATH } from "routes/routePath";
 
 function Register() {
   return (
