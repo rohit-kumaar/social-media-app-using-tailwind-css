@@ -8,7 +8,7 @@ function RightBar() {
       {/* container  */}
       <div className="p-5">
         {/* item  */}
-        <div className="p-5 shadow-lg shadow-indigo-500/40">
+        <div className="p-5 shadow-lg hover:shadow-indigo-500/40">
           <span className=" text-gray-500">Suggestions For You</span>
           {/* user  */}
           <div className="my-2 flex items-center justify-between gap-2 ">
@@ -26,10 +26,10 @@ function RightBar() {
 
             {/* buttons  */}
             <div className="flex gap-2">
-              <button className="rounded-md  bg-blue-600 px-2 text-white">
+              <button className="rounded-sm  bg-blue-600 px-2 text-white hover:scale-105">
                 follow
               </button>
-              <button className="rounded-md  bg-red-600 px-2 text-white">
+              <button className="rounded-sm  bg-red-600 px-2 text-white hover:scale-105">
                 dismiss
               </button>
             </div>
@@ -50,10 +50,10 @@ function RightBar() {
 
             {/* buttons  */}
             <div className="flex gap-2">
-              <button className="rounded-md  bg-blue-600 px-2 text-white">
+              <button className="rounded-sm  bg-blue-600 px-2 text-white hover:scale-105">
                 follow
               </button>
-              <button className="rounded-md  bg-red-600 px-2 text-white">
+              <button className="rounded-sm  bg-red-600 px-2 text-white hover:scale-105">
                 dismiss
               </button>
             </div>
