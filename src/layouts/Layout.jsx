@@ -8,7 +8,7 @@ function Layout() {
   return (
     <>
       <NavBar />
-      <div className="flex">
+      <div className="flex bg-white">
         <LeftBar />
         <div className="flex-[6_6_0%]">
           <Outlet />
