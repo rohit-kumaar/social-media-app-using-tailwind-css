@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { ProtectedRoute } from "routes/protectedRoutes";
 import { ROUTE_PATH } from "routes/routePath";
+import "./App.scss";
 
 function App() {
   const router = createBrowserRouter([

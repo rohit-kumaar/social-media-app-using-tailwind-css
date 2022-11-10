@@ -14,19 +14,25 @@ import rohit from "assets/rohit.jpeg";
 function NavBar() {
   return (
     // navbar
-    <div className="sticky top-0 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5">
+    <div className=" sticky top-0 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5 dark:border-[#444] dark:bg-[#222] dark:text-[whitesmoke]">
       {/* left  */}
       <div className="flex items-center gap-3">
         <Link to={ROUTE_PATH.Home}>
-          <span className="text-xl font-bold text-blue-700">rohitSocial</span>
+          <span className="text-xl font-bold text-blue-700 dark:text-white">
+            Social
+          </span>
         </Link>
         <HomeOutlinedIcon />
         <DarkModeOutlinedIcon />
         <GridViewOutlinedIcon />
         {/* search  */}
-        <div className="flex items-center gap-[10px] border-2">
+        <div className="flex items-center gap-[10px] rounded-md border-2 p-1 dark:border-[#444]   ">
           <SearchOutlinedIcon />
-          <input type="search" placeholder="Search..." className="" />
+          <input
+            type="search"
+            placeholder="Search..."
+            className="w-[500px]  bg-transparent focus:outline-none "
+          />
         </div>
       </div>
       {/* right  */}

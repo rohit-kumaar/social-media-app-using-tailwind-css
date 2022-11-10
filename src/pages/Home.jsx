@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
   return (
-    <div>
+    <div className="py-5 px-[70px] dark:bg-[#333]">
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
@@ -503,9 +503,8 @@ function Home() {
       <h1>Home</h1>
       <h1>Home</h1>
       <h1>Home</h1>
-      
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

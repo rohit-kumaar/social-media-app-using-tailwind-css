@@ -17,7 +17,7 @@ import Fund from "assets/13.png";
 function LeftBar() {
   return (
     // leftBar
-    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[2_2_0%]">
+    <div className="sticky dark:bg-[#222] dark:text-[lightgray] top-[50px] h-[calc(100vh_-_50px)] flex-[2_2_0%]">
       {/* container  */}
       <div className=" p-5">
         {/* menu  */}
@@ -90,7 +90,7 @@ function LeftBar() {
           </div>
         </div>
 
-        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200" />
+        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200 dark:bg-[#444]" />
         {/* menu  */}
         <div className="flex flex-col gap-2">
           <span className="text-xs">Your shortcuts</span>
@@ -150,7 +150,7 @@ function LeftBar() {
             <span className="text-sm">Messages</span>
           </div>
         </div>
-        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200" />
+        <hr className="my-5 mx-0 h-[0.5px] border-0 bg-gray-200 dark:bg-[#444]" />
         {/* menu  */}
         <div className="flex flex-col gap-2">
           <span className="text-xs">Others</span>

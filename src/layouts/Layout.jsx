@@ -7,6 +7,7 @@ import RightBar from "./RightBar";
 function Layout() {
   return (
     <>
+    <div className="">
       <NavBar />
       <div className="flex bg-white">
         <LeftBar />
@@ -14,6 +15,7 @@ function Layout() {
           <Outlet />
         </div>
         <RightBar />
+      </div>
       </div>
     </>
   );

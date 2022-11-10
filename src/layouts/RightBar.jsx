@@ -4,12 +4,12 @@ import rohit from "assets/rohit.jpeg";
 function RightBar() {
   return (
     // rightBar
-    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[3_3_0%]">
+    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[3_3_0%] dark:bg-[#333]">
       {/* container  */}
       <div className="p-5">
         {/* item  */}
-        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40">
-          <span className=" text-gray-500">Suggestions For You</span>
+        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40 dark:bg-[#222]">
+          <span className="dark:text-[whitesmoke]  text-gray-500">Suggestions For You</span>
           {/* user  */}
           <div className="my-2 flex items-center justify-between gap-2 ">
             {/* userInfo  */}
@@ -21,12 +21,12 @@ function RightBar() {
                 alt="Rohit Kumar"
                 title="Rohit Kumar"
               />
-              <span className="text-sm font-medium">Will Smith</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">Will Smith</span>
             </div>
 
             {/* buttons  */}
             <div className="flex gap-2">
-              <button className="rounded-sm  bg-blue-600 px-2 text-white hover:scale-105">
+            <button className="rounded-sm  bg-blue-600 px-2 text-white hover:scale-105">
                 follow
               </button>
               <button className="rounded-sm  bg-red-600 px-2 text-white hover:scale-105">
@@ -45,7 +45,7 @@ function RightBar() {
                 alt="Rohit Kumar"
                 title="Rohit Kumar"
               />
-              <span className="text-sm font-medium">John Deo</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
             </div>
 
             {/* buttons  */}
@@ -61,8 +61,8 @@ function RightBar() {
         </div>
 
         {/* item  */}
-        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40">
-          <span className=" text-gray-500">Latest Activities</span>
+        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40 dark:bg-[#222]">
+          <span className="dark:text-[whitesmoke]  text-gray-500">Latest Activities</span>
 
           {/* user  */}
           <div className="my-2 flex items-center justify-between gap-2">
@@ -76,14 +76,14 @@ function RightBar() {
                 title="Rohit Kumar"
               />
 
-              <p>
-                <span className="text-sm font-medium">John Deo</span>
-                <span className="text-xs text-gray-500">
+              <p className="dark:text[lightgray]">
+                <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
+                <span className="dark:text-[whitesmoke] text-xs text-gray-500">
                   changed their cover picture
                 </span>
               </p>
             </div>
-            <span className="text-gray-500">1 min ago</span>
+            <span className="dark:text-[whitesmoke] text-gray-500">1 min ago</span>
           </div>
 
           {/* user  */}
@@ -98,12 +98,12 @@ function RightBar() {
                 title="Rohit Kumar"
               />
 
-              <p>
-                <span className="text-sm font-medium">John Deo</span>
-                <span className="text-xs text-gray-500"> like a post</span>
+              <p className="dark:text[lightgray]">
+                <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
+                <span className="dark:text-[whitesmoke] text-xs text-gray-500"> like a post</span>
               </p>
             </div>
-            <span className="text-gray-500">1 min ago</span>
+            <span className="dark:text-[whitesmoke] text-gray-500">1 min ago</span>
           </div>
 
           {/* user  */}
@@ -118,12 +118,12 @@ function RightBar() {
                 title="Rohit Kumar"
               />
 
-              <p>
-                <span className="text-sm font-medium">John Deo</span>
-                <span className="text-xs text-gray-500"> liked a comment</span>
+              <p className="dark:text[lightgray]">
+                <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
+                <span className="dark:text-[whitesmoke] text-xs text-gray-500"> liked a comment</span>
               </p>
             </div>
-            <span className="text-gray-500">1 min ago</span>
+            <span className="dark:text-[whitesmoke] text-gray-500">1 min ago</span>
           </div>
 
           {/* user  */}
@@ -138,18 +138,18 @@ function RightBar() {
                 title="Rohit Kumar"
               />
 
-              <p>
-                <span className="text-sm font-medium">John Deo</span>
-                <span className="text-xs text-gray-500"> posted</span>
+              <p className="dark:text[lightgray]">
+                <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
+                <span className="dark:text-[whitesmoke] text-xs text-gray-500"> posted</span>
               </p>
             </div>
-            <span className="text-gray-500">1 min ago</span>
+            <span className="dark:text-[whitesmoke] text-gray-500">1 min ago</span>
           </div>
         </div>
 
         {/* item  */}
-        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40">
-          <span className=" text-gray-500">Online Friends</span>
+        <div className="mb-5 p-5 shadow-lg hover:shadow-indigo-500/40 dark:bg-[#222]">
+          <span className="dark:text-[whitesmoke]  text-gray-500">Online Friends</span>
           {/* user  */}
           <div className="my-2 flex items-center justify-between gap-2 ">
             {/* userInfo  */}
@@ -163,7 +163,7 @@ function RightBar() {
                   title="Rohit Kumar"
                 />
               </div>
-              <span className="text-sm font-medium">Will Smith</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">Will Smith</span>
             </div>
           </div>
 
@@ -181,7 +181,7 @@ function RightBar() {
                 />
               </div>
 
-              <span className="text-sm font-medium">John Deo</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
             </div>
           </div>
           {/* user  */}
@@ -197,7 +197,7 @@ function RightBar() {
                   title="Rohit Kumar"
                 />
               </div>
-              <span className="text-sm font-medium">Will Smith</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">Will Smith</span>
             </div>
           </div>
 
@@ -215,7 +215,7 @@ function RightBar() {
                 />
               </div>
 
-              <span className="text-sm font-medium">John Deo</span>
+              <span className="dark:text-[whitesmoke] text-sm font-medium">John Deo</span>
             </div>
           </div>
         </div>
