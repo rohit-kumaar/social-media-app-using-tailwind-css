@@ -1,17 +1,19 @@
-import React from "react";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
-import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { AuthContext } from "context/authContext";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "routes/routePath";
 import rohit from "assets/rohit.jpeg";
 
 function NavBar() {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     // navbar
     <div className=" sticky top-0 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5 dark:border-[#444] dark:bg-[#222] dark:text-[whitesmoke]">
@@ -49,7 +51,7 @@ function NavBar() {
             alt="Rohit Kumar"
             title="Rohit Kumar"
           />
-          <span>Rohit Kumar</span>
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>

@@ -1,8 +1,15 @@
-import React from "react";
+import { AuthContext } from "context/authContext";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "routes/routePath";
 
 function Login() {
+  const { login } = useContext(AuthContext);
+
+  const handleLogin = () => {
+    login()
+  }
+
   return (
     <div className="flex h-screen items-center justify-center bg-purple-400 ">
       {/* card  */}
@@ -38,7 +45,7 @@ function Login() {
               placeholder="Password"
               className="border-b-2 py-5 px-2 focus:z-10 focus:border-purple-600 focus:outline-none focus:ring-purple-600"
             />
-            <button className="w-1/2 border-none  bg-purple-500 p-3 font-bold text-white hover:bg-purple-600">
+            <button className="w-1/2 border-none  bg-purple-500 p-3 font-bold text-white hover:bg-purple-600" onClick={handleLogin}>
               Login
             </button>
           </form>

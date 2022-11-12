@@ -1,19 +1,32 @@
+import { AuthContext } from "context/authContext";
 import Layout from "layouts/Layout";
 import Home from "pages/Home";
 import Login from "pages/Login";
 import Profile from "pages/Profile";
 import Register from "pages/Register";
+import { useContext } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Outlet,
+  Navigate,
 } from "react-router-dom";
 import { ProtectedRoute } from "routes/protectedRoutes";
 import { ROUTE_PATH } from "routes/routePath";
 import "./App.scss";
 
 function App() {
+  const {currentUser} = useContext(AuthContext) ;
+
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to={ROUTE_PATH.Login} />;
+    }
+
+    return children;
+  };
+
   const router = createBrowserRouter([
     {
       path: ROUTE_PATH.Home,
