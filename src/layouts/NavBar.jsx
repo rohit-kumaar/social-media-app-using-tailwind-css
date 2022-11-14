@@ -16,7 +16,7 @@ function NavBar() {
 
   return (
     // navbar
-    <div className=" sticky top-0 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5 dark:border-[#444] dark:bg-[#222] dark:text-[whitesmoke]">
+    <div className=" sticky top-0 z-50 flex h-[50px] justify-between border-b-2 bg-white py-[10px] px-5 dark:border-[#444] dark:bg-[#222] dark:text-[whitesmoke]">
       {/* left  */}
       <div className="flex items-center gap-3">
         <Link to={ROUTE_PATH.Home}>

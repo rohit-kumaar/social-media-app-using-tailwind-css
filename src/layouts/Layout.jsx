@@ -7,15 +7,15 @@ import RightBar from "./RightBar";
 function Layout() {
   return (
     <>
-    <div className="">
-      <NavBar />
-      <div className="flex bg-white">
-        <LeftBar />
-        <div className="flex-[6_6_0%]">
-          <Outlet />
+      <div>
+        <NavBar />
+        <div className="flex bg-slate-100">
+          <LeftBar />
+          <div className="flex-[6_6_0%] ">
+            <Outlet />
+          </div>
+          <RightBar />
         </div>
-        <RightBar />
-      </div>
       </div>
     </>
   );
