@@ -8,15 +8,18 @@ import { Link } from "react-router-dom";
 // import Comments from "../comments/Comments";
 import { useState } from "react";
 import { ROUTE_PATH } from "routes/routePath";
+import Comments from "./Comments";
 
 function Post({ post }) {
+  const [commentOpen, setCommentOpen] = useState(false);
+
   // TEMPERER
   const liked = false;
 
   return (
     <div className="post mb-4 rounded-lg bg-white  px-3 pt-3 shadow-lg">
       <div className="container ">
-        <div className="user flex items-center justify-between rounded-xl bg-white px-5 py-2 ">
+        <div className="user flex items-center justify-between rounded-xl bg-white  py-2 ">
           <div className="userInfo flex items-center justify-center gap-5">
             <img
               className="h-10 w-10 rounded-full object-cover"
@@ -49,7 +52,10 @@ function Post({ post }) {
             {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
             12 Likes
           </div>
-          <div className="item  flex cursor-pointer items-center gap-2 text-sm">
+          <div
+            className="item  flex cursor-pointer items-center gap-2 text-sm"
+            onClick={() => setCommentOpen(!commentOpen)}
+          >
             <TextsmsOutlinedIcon />
             12 Comments
           </div>
@@ -58,6 +64,7 @@ function Post({ post }) {
             12 Shares
           </div>
         </div>
+        {commentOpen && <Comments />}
       </div>
     </div>
   );
