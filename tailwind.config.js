@@ -10,6 +10,12 @@ module.exports = {
         register:
           "linear-gradient(rgba(126, 34, 206, 0.6),rgba(126, 34, 206, 0.6)), url('/src/assets/register.png')",
       },
+      colors: {
+        logo: "darkblue",
+        bgSoft: "#f6f3f3",
+        textColorSoft: "#555",
+        border: "lightgray",
+      },
     },
   },
   plugins: [],
