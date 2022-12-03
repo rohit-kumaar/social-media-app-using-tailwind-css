@@ -1,11 +1,10 @@
-import React from "react";
+import { useTitle } from "hooks/useTitle";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "routes/routePath";
-import { useTitle } from "hooks/useTitle";
 
 function Register() {
   useTitle("Sign up");
-  
+
   return (
     <div className="flex h-screen items-center justify-center bg-purple-400 ">
       {/* card  */}

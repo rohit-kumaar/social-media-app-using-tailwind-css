@@ -1,5 +1,5 @@
-import { createContext, useEffect, useState } from "react";
 import rohit from "assets/rohit.jpeg";
+import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 

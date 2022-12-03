@@ -1,5 +1,5 @@
 import { AuthContext } from "context/authContext";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 function Stories() {
   const { currentUser } = useContext(AuthContext);
@@ -29,8 +29,8 @@ function Stories() {
   ];
 
   return (
-    <div className="mb-[30px] flex h-[250px] gap-[10px]">
-      <div className="relative flex-1 overflow-hidden rounded-[10px]">
+    <div className="mb-[30px] flex h-[50px] justify-between gap-[10px] lg:h-[250px]">
+      <div className="relative h-[50px] w-[50px] flex-none overflow-hidden rounded-full lg:h-full lg:flex-1 lg:rounded-[10px] ">
         <img
           className=" h-full w-full object-cover"
           loading="lazy"
@@ -38,17 +38,17 @@ function Stories() {
           alt={currentUser.name}
           title={currentUser.name}
         />
-        <span className="absolute bottom-3 left-3 font-medium text-white">
+        <span className="absolute bottom-3 left-3 hidden font-medium text-white">
           {currentUser.name}
         </span>
-        <button className="absolute bottom-10 left-3  h-6 w-6  rounded-[50px] bg-blue-600 text-white">
+        <button className="absolute inset-0 m-auto h-6 w-6  rounded-full bg-blue-600  text-white lg:top-auto lg:bottom-10 lg:left-3 lg:m-0 ">
           +
         </button>
       </div>
       {stories.map((story) => (
         <div
           key={story.id}
-          className="relative flex-1 overflow-hidden rounded-[10px]"
+          className="relative h-[50px] w-[50px] flex-none overflow-hidden rounded-full lg:h-full lg:flex-1 lg:rounded-[10px]"
         >
           <img
             className="h-full w-full"
@@ -57,7 +57,7 @@ function Stories() {
             alt={currentUser.name}
             title={currentUser.name}
           />
-          <span className="absolute bottom-3 left-3 font-medium text-white">
+          <span className="absolute bottom-3 left-3 hidden font-medium text-white">
             {story.name}
           </span>
         </div>

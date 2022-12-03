@@ -9,7 +9,6 @@ import { AuthContext } from "context/authContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "routes/routePath";
-import rohit from "assets/rohit.jpeg";
 
 function NavBar() {
   const { currentUser } = useContext(AuthContext);
@@ -33,12 +32,12 @@ function NavBar() {
           <input
             type="search"
             placeholder="Search..."
-            className="w-[500px]  bg-transparent focus:outline-none "
+            className="hidden w-[500px]  bg-transparent focus:outline-none "
           />
         </div>
       </div>
       {/* right  */}
-      <div className="flex items-center gap-5">
+      <div className="sm:flex hidden items-center gap-5">
         <PersonOutlinedIcon />
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />

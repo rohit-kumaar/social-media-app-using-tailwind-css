@@ -17,7 +17,7 @@ import Fund from "assets/13.png";
 function LeftBar() {
   return (
     // leftBar
-    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[2_2_0%] bg-white dark:bg-[#222] dark:text-[lightgray]">
+    <div className="sticky top-[50px] hidden h-[calc(100vh_-_50px)] flex-[2_2_0%] bg-white dark:bg-[#222] dark:text-[lightgray] lg:block">
       {/* container  */}
       <div className=" p-5">
         {/* menu  */}

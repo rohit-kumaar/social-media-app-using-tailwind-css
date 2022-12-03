@@ -4,7 +4,7 @@ import rohit from "assets/rohit.jpeg";
 function RightBar() {
   return (
     // rightBar
-    <div className="sticky top-[50px] h-[calc(100vh_-_50px)] flex-[3_3_0%] dark:bg-[#333]  ">
+    <div className="sticky top-[50px] hidden h-[calc(100vh_-_50px)] flex-[3_3_0%] dark:bg-[#333] lg:block ">
       {/* container  */}
       <div className="p-5">
         {/* item  */}

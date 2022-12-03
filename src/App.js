@@ -6,18 +6,13 @@ import Profile from "pages/Profile";
 import Register from "pages/Register";
 import { useContext } from "react";
 import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Outlet,
-  Navigate,
+  createBrowserRouter, Navigate, RouterProvider
 } from "react-router-dom";
-import { ProtectedRoute } from "routes/protectedRoutes";
 import { ROUTE_PATH } from "routes/routePath";
 import "./App.scss";
 
 function App() {
-  const {currentUser} = useContext(AuthContext) ;
+  const { currentUser } = useContext(AuthContext);
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {

@@ -1,13 +1,11 @@
-import React from "react";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
-import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
-import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
+import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import { Link } from "react-router-dom";
 // import Comments from "../comments/Comments";
 import { useState } from "react";
-import { ROUTE_PATH } from "routes/routePath";
 import Comments from "./Comments";
 
 function Post({ post }) {

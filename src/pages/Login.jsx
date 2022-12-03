@@ -1,8 +1,8 @@
 import { AuthContext } from "context/authContext";
-import React, { useContext } from "react";
+import { useTitle } from "hooks/useTitle";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "routes/routePath";
-import { useTitle } from "hooks/useTitle";
 
 function Login() {
   useTitle("Login");

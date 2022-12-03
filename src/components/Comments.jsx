@@ -1,5 +1,5 @@
 import { AuthContext } from "context/authContext";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 function Comments() {
   const { currentUser } = useContext(AuthContext);
